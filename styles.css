@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  background: #8c52ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  width: 25%;
+  height: 3 0%;
+  border-radius: 1.25rem;
+}
+
+.container.expanded {
+  width: 35%;
+  height: 60%;
+}
+
+.header {
+  display: flex;
+}
+
+.search {
+  border-radius: 10px;
+  width: calc(100% - 30px);
+  padding: 8px;
+  display: flex;
+  gap: 20px;
+}
+
+input {
+  width: calc(100% - 50px);
+  height: 25px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#search-btn {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  width: 25px;
+}
+#search-btn img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.weather-info {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px;
+  border-radius: 0.75rem;
+  gap: 10px; /* Space between forecast containers */
+  width: 100%; /* Ensure it takes up the full width of the container */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  height: 30%;
+}
+
+.forecast-container {
+  flex: 0 0 auto; /* Prevent shrinking, allow growing */
+  padding: 5px; /* Reduce padding */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  min-width: 30px; /* Set a minimum width for each container */
+  text-align: center;
+  color: #8c52ff; /* Text color */
+  font-size: 14px; /* Reduce font size */
+}
+.forecast-container.night {
+  background-color: #34495e; /* Darker background for night time */
+  color: white; /* Change text color for better visibility */
+}
+
+.forecast-container img {
+  height: 30px;
+}
+.forecast-container p {
+  margin: 5px 0;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon div {
+  font-size: 40px;
+}
+
+.icon img {
+  height: 150px;
+}
+
+.weather-description {
+  padding-bottom: 40px;
+}
