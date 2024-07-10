@@ -1,1 +1,1 @@
-use api's to fetch real time info on any city
+[Weather API Project](https://drewmonicus.github.io/weather-api-project/)
